@@ -1,0 +1,441 @@
+/* CUSTOM FONTS */
+
+@font-face {
+    font-family: 'Boochild';
+    src: url('./fonts/Boochild.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+   }
+   
+   @font-face {
+    font-family: 'MuedaCity';
+    src: url('./fonts/MuedaCity.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+   }
+
+   @font-face {
+    font-family: 'MuedaCity';
+    src: url('./fonts/AQUARIUM.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+   }
+
+   /* Body and main styles */
+   
+   body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hashtag#f0f0f0;
+   }
+
+   body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./assets/bckground.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(9px); /* Apply blur effect here */
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
+}
+
+   html {
+    scroll-behavior: smooth;
+}
+
+   
+   .main {
+    margin-left: 650px;
+   }
+  
+   /* Titles */
+
+   .tilted-text {
+    transform: rotate(-8deg);
+    font-size: 5rem;
+    font-family: 'Boochild';
+    color: black;
+    margin-bottom: 260px;
+    margin-left: 150px;
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+   }
+   
+   .tilted-text2 {
+    transform: rotate(-8deg);
+    font-size: 15rem;
+    font-family: 'Boochild'; /* Changed to MuedaCity */
+    color: black;
+    margin-top: -350px;
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+   }
+
+   .tilted-text3 {
+    transform: rotate(-8deg);
+    font-size: 2.15rem;
+    font-family: 'Boochild'; /* Changed to MuedaCity */
+    color: black;
+    margin-top: -225px;
+    margin-left: 100px;
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+   }
+
+
+
+
+   
+
+
+
+/* Images */
+
+.arrow2 {
+    width: 350px;
+    height: 350px;
+    margin-left: -1200px;
+    margin-top: -70px;
+    transform: rotate(-25deg);
+}
+
+.arrow3 {
+    display: absolute;
+    width: 350px;
+    height: 350px;
+    margin-left: -350px;
+    margin-top: -80px;
+    transform: rotate(-10deg);
+}
+
+.aftereffects {
+    width: 190px;
+    height: 190px;
+    margin-left: -1100px;
+    margin-top: -250px;
+    transform: rotate(-15deg);
+}
+
+.davinci {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 100px;
+    margin-left: -10px;
+    transform: rotate(18deg);
+}
+
+
+.photoshop {
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+    transform: rotate(-28deg);
+}
+
+.premierpro {
+    width: 200px;
+    height: 200px;
+    transform: rotate(18deg);
+}
+
+.vsc {
+    width: 100px;
+    height: 100px;
+    margin-bottom: -40px;
+    margin-left: -450px;
+    transform: rotate(-14deg);
+}
+
+.left-content img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.left-content img:hover {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+/* Hover effect for images except for the arrow image */
+.left-content img:not(.arrow):hover {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+.left-content .arrow:hover {
+    transform: none;
+    filter: none;
+}
+
+
+.frame1 {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    margin-left: -1250px;
+    transform: rotate(-8deg);
+}
+
+.frame2 {
+    position: absolute;
+    width: 750px;
+    height: 750px;
+    margin-left: -500px;
+    transform: rotate(12deg);
+}
+
+.tape1 {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin-left: -150px;
+    margin-top: 60px;
+    transform: rotate(6deg);
+}
+
+.tape2 {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    margin-left: -1050px;
+    margin-top: 42px;
+    transform: rotate(-10deg);
+}
+
+.images {
+    margin-left: -900px;
+}
+
+/* About */
+
+
+.about {
+    margin-top: -600px;
+}
+.about-title {
+    margin-top: 2000px;
+    align-items: center;
+    margin-left: -500px;
+    font-family: 'Boochild';
+    font-size: 4rem;
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+}
+
+.about-me-text {
+    align-items: center;
+    text-align: center;
+    margin-right: 300px;
+    margin-left: -900px;
+    font-family: 'MuedaCity';
+    font-size: 1.5rem;
+    color: #333;
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+}
+
+.me1 {
+    font-family: 'Boochild';
+    font-size: 2.5rem;
+    margin-left: -1000px;
+    margin-top: 2300px;
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+}
+
+.me2 {
+    font-family: 'Boochild';
+    font-size: 2.5rem;
+    margin-left: -200px;
+    margin-top: 2700px;
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Experience */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3500px;
+}
+
+.left-content {
+    text-align: left;
+    margin-left: -500px;
+    font-size: 1.25rem;
+    font-family: 'MuedaCity';
+    margin-top: 70px;
+    color: #333;
+}
+
+.left1 {
+    text-align: left;
+    margin-left: -850px;
+    margin-top: 560px;
+    font-size: 3.25rem;
+    font-family: 'Boochild';
+    color: black;
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+}
+
+.left2 {
+    text-align: left;
+    margin-left: -900px;
+    font-size: 7rem;
+    margin-top: -70px;
+    font-family: 'Boochild';
+    color: black;
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+}
+
+.right-content {
+    text-align: center;
+    margin-right: -100px;
+    font-size: 1.25rem;
+    font-family: 'MuedaCity';
+    margin-top: 600px;
+    color: #333;
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+}
+
+.experience {
+    font-family: 'Boochild';
+    font-size: 6rem;
+    color: black;
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* PROJECTS */
+
+.project1-image {
+    width: 1000px;
+    margin-left: -1710px;
+}
+
+.project2-image {
+    width: 1000px;
+    margin-left: -800px;
+    margin-top: -1200px;
+}
+
+.projects {
+    margin-top: 6000px;
+}
+
+.projects-title {
+    font-family: 'Boochild';
+    font-size: 6rem;
+    align-items: center;
+    margin-left: -900px;
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+}
+
+.project1-title {
+    font-family: 'MuedaCity';
+    font-size: 4rem;
+    align-items: center;
+    margin-left: -1370px;
+    margin-top: -55px;
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+}
+
+.project1-description {
+    font-family: 'MuedaCity';
+    font-size: 1.5rem;
+    align-items: center;
+    margin-left: -1370px;
+    margin-top: -45px;
+    color: #333;
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+}
+
+.project2-title {
+    font-family: 'MuedaCity';
+    font-size: 4rem;
+    align-items: center;
+    margin-left: -520px;
+    margin-top: -55px;
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+}
+
+.project2-description {
+    font-family: 'MuedaCity';
+    font-size: 1.5rem;
+    align-items: center;
+    margin-left: -350px;
+    margin-top: -45px;
+    color: #333;
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+}
+
+.project1 img, .project2 img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.project1 a:hover img, .project2 a:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+/*Poster */
+
+.poster1 {
+    width: 1000px;
+    margin-left: -1470px;
+}
+
+.poster-title {
+    margin-top: 8200px;
+    margin-left: -1090px;
+    font-family: 'Boochild';
+    font-size: 6rem;
+    align-items: center;
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+}
+
+.poster1 {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.posters a:hover .poster1 {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+
+
+
+/* Contact */
+
+.contact {
+    margin-top: 9500px;
+}
+
+.contact-title {
+    font-family: 'Boochild';
+    font-size: 6rem;
+    align-items: center;
+    margin-left: -1150px;
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    margin-left: -1080px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    font-family: 'MuedaCity';
+    font-size: 2rem;
+}
+
+.contact-button:hover {
+    background-color: #555;
+}
