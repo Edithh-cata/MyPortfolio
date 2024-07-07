@@ -94,6 +94,16 @@
 
 /* Images */
 
+.arrow {
+    display: absolute;
+    width: 350px;
+    height: 350px;
+    margin-left: -550px;
+    margin-top: -100px;
+    transform: rotate(-50deg);
+    animation: none;
+}
+
 .arrow2 {
     width: 350px;
     height: 350px;
@@ -114,9 +124,14 @@
 .aftereffects {
     width: 190px;
     height: 190px;
-    margin-left: -1100px;
+    margin-left: -900px;
     margin-top: -250px;
     transform: rotate(-15deg);
+}
+
+.aftereffects-link {
+    text-decoration: none;
+    color: transparent;
 }
 
 .davinci {
@@ -127,6 +142,10 @@
     transform: rotate(18deg);
 }
 
+.davinci-link {
+    text-decoration: none;
+    color: transparent;
+}
 
 .photoshop {
     width: 100px;
@@ -135,10 +154,20 @@
     transform: rotate(-28deg);
 }
 
+.photoshop-link {
+    text-decoration: none;
+    color: transparent;
+}
+
 .premierpro {
     width: 200px;
     height: 200px;
     transform: rotate(18deg);
+}
+
+.premierpro-link {
+    text-decoration: none;
+    color: transparent;
 }
 
 .vsc {
@@ -147,6 +176,11 @@
     margin-bottom: -40px;
     margin-left: -450px;
     transform: rotate(-14deg);
+}
+
+.vsc-link {
+    text-decoration: none;
+    color: transparent;
 }
 
 .left-content img {
