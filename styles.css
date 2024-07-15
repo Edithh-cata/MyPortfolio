@@ -22,6 +22,13 @@
     font-style: normal;
    }
 
+   @font-face {
+    font-family: 'PoeticScript';
+    src: url('./fonts/poeticscript.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+   }
+
    /* Body and main styles */
    
    body, html {
@@ -40,9 +47,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('./assets/bckground.jpg') no-repeat center center fixed;
+    background: url('./assets/background.jpg') no-repeat center center fixed;
     background-size: cover;
-    filter: blur(9px); /* Apply blur effect here */
+    filter: blur(3px); /* Apply blur effect here */
     z-index: -1; /* Ensure the pseudo-element is behind the content */
 }
 
@@ -326,7 +333,7 @@
     text-align: center;
     margin-right: -100px;
     font-size: 1.25rem;
-    font-family: 'MuedaCity';
+    font-family: 'Muedacity';
     margin-top: 600px;
     color: #333;
     text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
