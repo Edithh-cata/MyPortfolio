@@ -1,4 +1,3 @@
-
 /* CUSTOM FONTS */
 
 @font-face {
@@ -6,41 +5,41 @@
     src: url('./fonts/Boochild.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-   }
-   
-   @font-face {
+}
+
+@font-face {
     font-family: 'MuedaCity';
     src: url('./fonts/MuedaCity.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-   }
+}
 
-   @font-face {
+@font-face {
     font-family: 'MuedaCity';
     src: url('./fonts/AQUARIUM.otf') format('otf');
     font-weight: normal;
     font-style: normal;
-   }
+}
 
-   @font-face {
+@font-face {
     font-family: 'PoeticScript';
     src: url('./fonts/poeticscript.otf') format('otf');
     font-weight: normal;
     font-style: normal;
-   }
+}
 
-   /* Body and main styles */
-   
-   body, html {
+/* Body and main styles */
+
+body, html {
     height: 100%;
     margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: hashtag#f0f0f0;
-   }
+    background-color: #f0f0f0;
+}
 
-   body::before {
+body::before {
     content: '';
     position: fixed;
     top: 0;
@@ -49,22 +48,21 @@
     height: 100%;
     background: url('./assets/background.jpg') no-repeat center center fixed;
     background-size: cover;
-    filter: blur(3px); /* Apply blur effect here */
+    filter: blur(0px); /* Apply blur effect here */
     z-index: -1; /* Ensure the pseudo-element is behind the content */
 }
 
-   html {
+html {
     scroll-behavior: smooth;
 }
 
-   
-   .main {
+.main {
     margin-left: 650px;
-   }
-  
-   /* Titles */
+}
 
-   .tilted-text {
+/* Titles */
+
+.tilted-text {
     transform: rotate(-8deg);
     font-size: 5rem;
     font-family: 'Boochild';
@@ -72,18 +70,18 @@
     margin-bottom: 260px;
     margin-left: 150px;
     text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
-   }
-   
-   .tilted-text2 {
+}
+
+.tilted-text2 {
     transform: rotate(-8deg);
     font-size: 15rem;
     font-family: 'Boochild'; /* Changed to MuedaCity */
     color: black;
     margin-top: -350px;
     text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
-   }
+}
 
-   .tilted-text3 {
+.tilted-text3 {
     transform: rotate(-8deg);
     font-size: 2.15rem;
     font-family: 'Boochild'; /* Changed to MuedaCity */
@@ -91,25 +89,12 @@
     margin-top: -225px;
     margin-left: 100px;
     text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
-   }
-
-
-
-
-   
-
-
+}
 
 /* Images */
 
-.arrow {
+.arrow, .arrow2, .arrow3, .aftereffects, .davinci, .photoshop, .premierpro, .vsc {
     display: absolute;
-    width: 350px;
-    height: 350px;
-    margin-left: -550px;
-    margin-top: -100px;
-    transform: rotate(-50deg);
-    animation: none;
 }
 
 .arrow2 {
@@ -121,7 +106,6 @@
 }
 
 .arrow3 {
-    display: absolute;
     width: 350px;
     height: 350px;
     margin-left: -350px;
@@ -129,66 +113,16 @@
     transform: rotate(-10deg);
 }
 
-.aftereffects {
-    width: 190px;
-    height: 190px;
+.software-list {
+    width: 800px;
+    margin-left: -1150px;
+    margin-top: 350px;
+}
+
+.experience-list {
+    width: 800px;
     margin-left: -900px;
-    margin-top: -250px;
-    transform: rotate(-15deg);
-}
-
-.aftereffects-link {
-    text-decoration: none;
-    color: transparent;
-}
-
-.davinci {
-    width: 180px;
-    height: 180px;
-    margin-bottom: 100px;
-    margin-left: -10px;
-    transform: rotate(18deg);
-}
-
-.davinci-link {
-    text-decoration: none;
-    color: transparent;
-}
-
-.photoshop {
-    width: 100px;
-    height: 100px;
-    margin-top: 30px;
-    transform: rotate(-28deg);
-}
-
-.photoshop-link {
-    text-decoration: none;
-    color: transparent;
-}
-
-.premierpro {
-    width: 200px;
-    height: 200px;
-    transform: rotate(18deg);
-}
-
-.premierpro-link {
-    text-decoration: none;
-    color: transparent;
-}
-
-.vsc {
-    width: 100px;
-    height: 100px;
-    margin-bottom: -40px;
-    margin-left: -450px;
-    transform: rotate(-14deg);
-}
-
-.vsc-link {
-    text-decoration: none;
-    color: transparent;
+    margin-top: 10px;
 }
 
 .left-content img {
@@ -196,6 +130,15 @@
 }
 
 .left-content img:hover {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+.right-content img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.right-content img:hover {
     transform: scale(1.1);
     filter: brightness(0.8);
 }
@@ -211,25 +154,27 @@
     filter: none;
 }
 
+.frame1, .frame2, .tape1, .tape2, .images, .pic1, .pic2 {
+    position: absolute;
+}
 
 .frame1 {
-    position: absolute;
-    width: 600px;
+    width: 450px;
     height: 600px;
-    margin-left: -1250px;
+    margin-left: -1200px;
+    margin-top: 65px;
     transform: rotate(-8deg);
 }
 
 .frame2 {
-    position: absolute;
-    width: 750px;
-    height: 750px;
-    margin-left: -500px;
+    width: 400x;
+    height: 600px;
+    margin-left: -350px;
+    margin-top: 95px;
     transform: rotate(12deg);
 }
 
 .tape1 {
-    position: absolute;
     width: 160px;
     height: 160px;
     margin-left: -150px;
@@ -238,7 +183,6 @@
 }
 
 .tape2 {
-    position: absolute;
     width: 130px;
     height: 130px;
     margin-left: -1050px;
@@ -250,12 +194,27 @@
     margin-left: -900px;
 }
 
-/* About */
+.pic1 {
+    width: 300px;
+    height: 300px;
+    margin-top: 2500px;
+    margin-left: -1500px;
+    transform: rotate(-9deg);
+}
 
+.pic2 {
+    width: 320px;
+    margin-top: 2510px;
+    margin-left: -674px;
+    transform: rotate(12deg);
+}
+
+/* About */
 
 .about {
     margin-top: -600px;
 }
+
 .about-title {
     margin-top: 2000px;
     align-items: center;
@@ -276,20 +235,20 @@
     text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
 }
 
-.me1 {
+.me1, .me2 {
     font-family: 'Boochild';
     font-size: 2.5rem;
-    margin-left: -1000px;
-    margin-top: 2300px;
     text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
 }
 
+.me1 {
+    margin-left: -1000px;
+    margin-top: 2300px;
+}
+
 .me2 {
-    font-family: 'Boochild';
-    font-size: 2.5rem;
     margin-left: -200px;
     margin-top: 2700px;
-    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
 }
 
 /* Experience */
@@ -309,24 +268,23 @@
     color: #333;
 }
 
-.left1 {
+.left1, .left2 {
     text-align: left;
-    margin-left: -850px;
-    margin-top: 560px;
-    font-size: 3.25rem;
     font-family: 'Boochild';
     color: black;
     text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
 }
 
+.left1 {
+    margin-left: -850px;
+    margin-top: 560px;
+    font-size: 3.25rem;
+}
+
 .left2 {
-    text-align: left;
     margin-left: -900px;
     font-size: 7rem;
     margin-top: -70px;
-    font-family: 'Boochild';
-    color: black;
-    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
 }
 
 .right-content {
@@ -346,17 +304,17 @@
     text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
 }
 
-
-
 /* PROJECTS */
 
-.project1-image {
+.project1-image, .project2-image {
     width: 1000px;
+}
+
+.project1-image {
     margin-left: -1710px;
 }
 
 .project2-image {
-    width: 1000px;
     margin-left: -800px;
     margin-top: -1200px;
 }
@@ -365,50 +323,47 @@
     margin-top: 6000px;
 }
 
+.projects-title, .project1-title, .project1-description, .project2-title, .project2-description {
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+}
+
 .projects-title {
     font-family: 'Boochild';
     font-size: 6rem;
     align-items: center;
     margin-left: -900px;
-    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+}
+
+.project1-title, .project2-title {
+    font-family: 'MuedaCity';
+    font-size: 4rem;
+    align-items: center;
 }
 
 .project1-title {
-    font-family: 'MuedaCity';
-    font-size: 4rem;
-    align-items: center;
     margin-left: -1370px;
     margin-top: -55px;
-    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
-}
-
-.project1-description {
-    font-family: 'MuedaCity';
-    font-size: 1.5rem;
-    align-items: center;
-    margin-left: -1370px;
-    margin-top: -45px;
-    color: #333;
-    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
 }
 
 .project2-title {
-    font-family: 'MuedaCity';
-    font-size: 4rem;
-    align-items: center;
     margin-left: -520px;
     margin-top: -55px;
-    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+}
+
+.project1-description, .project2-description {
+    font-family: 'MuedaCity';
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.project1-description {
+    margin-left: -1370px;
+    margin-top: -45px;
 }
 
 .project2-description {
-    font-family: 'MuedaCity';
-    font-size: 1.5rem;
-    align-items: center;
     margin-left: -350px;
     margin-top: -45px;
-    color: #333;
-    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
 }
 
 .project1 img, .project2 img {
@@ -420,7 +375,7 @@
     filter: brightness(0.8);
 }
 
-/*Poster */
+/* Poster */
 
 .poster1 {
     width: 1000px;
@@ -444,9 +399,6 @@
     transform: scale(1.1);
     filter: brightness(0.8);
 }
-
-
-
 
 /* Contact */
 
